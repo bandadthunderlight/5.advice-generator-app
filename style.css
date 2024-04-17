@@ -1,0 +1,91 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+- Font size (quote): 28px
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(./fonts/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: Manrope-Bold;
+  src: url(./fonts/Manrope-Bold.ttf);
+}
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 800;
+  background-color: var(--Dark-Blue);
+}
+
+.advice-generator-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advice-generator-wrapper {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 35 rem;
+  height: 21rem;
+  margin: 6rem 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.advice-number {
+  color: var(--Neon-Green);
+  font-family: Manrope;
+  font-size: x-small;
+  margin: 2rem;
+}
+.advice-text {
+  height: 60% !important;
+  color: var(--Light-Cyan);
+  font-size: x-large;
+}
+.advice-shape {
+  margin-bottom: 1rem;
+}
+.advice-request {
+  margin-bottom: -2.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  background-color: var(--Neon-Green);
+  color: var(--Neon-Green);
+  padding: 1.3rem 1rem;
+  border-radius: 50%;
+}
+.advice-request :hover {
+  box-shadow: 0px 0px 23px 23px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
